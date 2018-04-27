@@ -1,8 +1,15 @@
 package ec.solmedia.kotlin.jee.index.web
 
+import ec.solmedia.kotlin.jee.index.service.ProductService
+import java.io.Serializable
 import javax.enterprise.inject.Model
+import javax.inject.Inject
 
 @Model
-class IndexController {
-    val message: String = "Kotlin with Java EE 7"
+class IndexController : Serializable {
+
+    @Inject
+    private lateinit var productService: ProductService
+
+    fun getProducts() = productService.getProducts()
 }

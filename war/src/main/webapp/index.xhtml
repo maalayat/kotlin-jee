@@ -13,6 +13,13 @@
            </div>
 		   <div class="row">
                <div class="col-md-12 text-center">
+                   <c:forEach var="product" items="#{indexController.products}" varStatus="status">
+                       <li>
+                           #{product.name}
+                       </li>
+
+                   </c:forEach>
+
 
                </div>
            </div>
