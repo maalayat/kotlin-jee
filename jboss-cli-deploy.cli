@@ -1,2 +1,0 @@
-connect
-deploy --force /home/picodotdev/Software/personal/git/blog-ejemplos/JavaEE7/ear/build/libs/ear.ear
