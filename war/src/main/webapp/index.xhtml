@@ -2,7 +2,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
 <body>
 <ui:composition template="template.xhtml">
     <ui:define name="content">
@@ -13,9 +15,20 @@
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <h1>#{indexController.app}</h1>
-
-
+                <p:dataTable value="#{indexController.products}" var="product">
+                    <p:column headerText="Id">
+                        <h:outputText value="#{product.id}"/>
+                    </p:column>
+                    <p:column headerText="Name">
+                        <h:outputText value="#{product.name}"/>
+                    </p:column>
+                    <p:column headerText="Price">
+                        <h:outputText value="#{product.price}"/>
+                    </p:column>
+                    <p:column headerText="Stock">
+                        <h:outputText value="#{product.stock}"/>
+                    </p:column>
+                </p:dataTable>
             </div>
         </div>
     </ui:define>

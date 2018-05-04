@@ -5,7 +5,6 @@ import javax.ejb.Stateless
 import javax.persistence.EntityManager
 import javax.persistence.PersistenceContext
 
-
 @Stateless
 class ProductDao {
 
@@ -13,6 +12,7 @@ class ProductDao {
     private lateinit var em: EntityManager
 
     fun findProducts(): List<Product> {
+        println("findProductsDao")
         val query = em.createQuery("SELECT p FROM Product p", Product::class.java)
         return query.resultList
     }

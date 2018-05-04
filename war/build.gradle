@@ -1,7 +1,16 @@
 apply plugin: 'war'
 
+repositories {
+    maven {
+        url "http://repository.primefaces.org"
+    }
+}
+
 dependencies {
 	providedCompile project(':ejb')	
     providedCompile 'javax:javaee-api:7.0'
     providedCompile 'javax.servlet:jstl:1.2'
+
+    //primefaces
+    compile 'org.primefaces:primefaces:6.2'
 }

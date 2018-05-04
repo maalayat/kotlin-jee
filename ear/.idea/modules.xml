@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ear.iml" filepath="$PROJECT_DIR$/ear.iml" group="ear" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ear_main.iml" filepath="$PROJECT_DIR$/.idea/modules/ear_main.iml" group="ear" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ear_test.iml" filepath="$PROJECT_DIR$/.idea/modules/ear_test.iml" group="ear" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-682939404/ejb.iml" filepath="$PROJECT_DIR$/.idea/modules/-682939404/ejb.iml" group="ejb" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-682939404/ejb_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-682939404/ejb_main.iml" group="ejb" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-682939404/ejb_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-682939404/ejb_test.iml" group="ejb" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1827227942/kotlin-jee.iml" filepath="$PROJECT_DIR$/.idea/modules/1827227942/kotlin-jee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-682922369/war.iml" filepath="$PROJECT_DIR$/.idea/modules/-682922369/war.iml" group="war" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-682922369/war_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-682922369/war_main.iml" group="war" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-682922369/war_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-682922369/war_test.iml" group="war" />
+    </modules>
+  </component>
+</project>

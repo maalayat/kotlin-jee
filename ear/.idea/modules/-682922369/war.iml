@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":war" external.linked.project.path="$MODULE_DIR$/../../../../war" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="kotlin-jee" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../war">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../war/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../war/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../war/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

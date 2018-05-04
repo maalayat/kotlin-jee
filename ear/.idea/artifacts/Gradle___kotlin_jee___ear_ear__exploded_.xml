@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="Gradle : kotlin-jee : ear.ear (exploded)">
+    <output-path>$PROJECT_DIR$/build/libs/exploded/ear.ear</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <files>
+          <file path="$PROJECT_DIR$/build/libs/exploded/ear.ear/META-INF/application.xml" value="PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxhcHBsaWNhdGlvbiB4bWxucz0iaHR0cDovL2phdmEuc3VuLmNvbS94bWwvbnMvamF2YWVlIgogICAgICAgICAgICAgeHNpOnNjaGVtYUxvY2F0aW9uPSJodHRwOi8vamF2YS5zdW4uY29tL3htbC9ucy9qYXZhZWUgaHR0cDovL2phdmEuc3VuLmNvbS94bWwvbnMvamF2YWVlL2FwcGxpY2F0aW9uXzYueHNkIgogICAgICAgICAgICAgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgdmVyc2lvbj0iNiI+CiAgICA8ZGlzcGxheS1uYW1lPmVhcjwvZGlzcGxheS1uYW1lPgogICAgPG1vZHVsZT4KICAgICAgICA8ZWpiPmVqYi5qYXI8L2VqYj4KICAgIDwvbW9kdWxlPgogICAgPG1vZHVsZT4KICAgICAgICA8d2ViPgogICAgICAgICAgICA8d2ViLXVyaT53YXIud2FyPC93ZWItdXJpPgogICAgICAgICAgICA8Y29udGV4dC1yb290PndhcjwvY29udGV4dC1yb290PgogICAgICAgIDwvd2ViPgogICAgPC9tb2R1bGU+CiAgICA8bGlicmFyeS1kaXJlY3Rvcnk+bGliPC9saWJyYXJ5LWRpcmVjdG9yeT4KPC9hcHBsaWNhdGlvbj4K" />
+        </files>
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/build/libs/exploded/ear.ear/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="ear_main/javaeeApplication/JavaEE Application Gradle : ear.ear" />
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/application" />
+      <element id="directory" name="ejb.jar">
+        <element id="module-output" name="ejb_main" />
+        <element id="dir-copy" path="$PROJECT_DIR$/../ejb/out/production/resources" />
+      </element>
+      <element id="directory" name="war.war">
+        <element id="artifact" artifact-name="Gradle : kotlin-jee : war.war (exploded)" />
+      </element>
+    </root>
+  </artifact>
+</component>

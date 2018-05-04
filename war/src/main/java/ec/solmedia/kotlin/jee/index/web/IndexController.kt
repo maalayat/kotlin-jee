@@ -12,11 +12,7 @@ class IndexController : Serializable {
     @Inject
     private lateinit var productService: ProductService
 
-    @PostConstruct
-    fun init() {
-        productService.getProducts().forEach { println(it.name) }
-    }
-
-
     fun getApp() = "Kotlin supermarket"
+
+    fun getProducts() = productService.getProducts()
 }

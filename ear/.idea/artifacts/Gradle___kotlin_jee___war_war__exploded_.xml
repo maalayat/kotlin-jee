@@ -1,0 +1,25 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : kotlin-jee : war.war (exploded)">
+    <output-path>$PROJECT_DIR$/../war/build/libs/exploded/war.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../war/build/libs/exploded/war.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="war_main/web/Web Gradle : war.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="war_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/../war/out/production/resources" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.primefaces:primefaces:6.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
