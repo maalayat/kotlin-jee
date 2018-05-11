@@ -13,4 +13,5 @@ dependencies {
 
     //primefaces
     compile 'org.primefaces:primefaces:6.2'
+    compile 'org.primefaces.themes:bootstrap:1.0.10'
 }
