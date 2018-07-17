@@ -1,3 +1,6 @@
+apply plugin: 'kotlin-kapt'
+
 dependencies {
     compile 'javax:javaee-api:7.0'
+    kapt 'org.hibernate:hibernate-jpamodelgen:5.3.2.Final'
 }

@@ -6,6 +6,7 @@ This project is a very simple example of Java EE 7 application entirely programm
 
 - Java EE 7
     - JPA
+    - Criteria API(Inspired by [Lambda expressions with JPA Criteria API project](https://github.com/janhalasa/JpaCriteriaWithLambdaExpressions))
     - CDI
     - JSF
 - Kotlin
