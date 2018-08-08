@@ -55,4 +55,12 @@ subprojects {
     task listJars << {
         configurations.compile.each { File file -> println file.name }
     }
+
+    /*idea {
+        module {
+            def kaptMain = file('build/generated/source/kapt/main')
+            sourceDirs += kaptMain
+            generatedSourceDirs += kaptMain
+        }
+    }*/
 }

@@ -2,5 +2,13 @@ apply plugin: 'kotlin-kapt'
 
 dependencies {
     compile 'javax:javaee-api:7.0'
-    kapt 'org.hibernate:hibernate-jpamodelgen:5.3.2.Final'
+
+    compile "com.mysema.querydsl:querydsl-jpa:3.7.4"
+    kapt "com.mysema.querydsl:querydsl-apt:3.7.4:jpa"
+
+//    compile "com.querydsl:querydsl-jpa:4.2.1"
+//    kapt "com.querydsl:querydsl-apt:4.2.1:jpa"
+//    compile "org.hibernate:hibernate-entitymanager:4.3.5.Final"
+
+    //kapt 'org.hibernate:hibernate-jpamodelgen:5.3.2.Final'
 }

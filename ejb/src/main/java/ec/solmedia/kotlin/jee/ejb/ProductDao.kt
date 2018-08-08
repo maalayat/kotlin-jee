@@ -1,30 +1,24 @@
 package ec.solmedia.kotlin.jee.ejb
 
+import com.mysema.query.jpa.impl.JPAQuery
 import ec.solmedia.kotlin.jee.jpa.Product
-import ec.solmedia.kotlin.jee.jpa.Product_
+import ec.solmedia.kotlin.jee.jpa.QProduct.product
 import javax.ejb.Stateless
+import javax.persistence.EntityManager
+import javax.persistence.PersistenceContext
 
 @Stateless
-class ProductDao : AbstractDao<Product>(Product::class.java) {
+class ProductDao {
 
-    fun findAllByJpql(): List<Product> {
-        val query = em.createQuery("SELECT p FROM Product p", Product::class.java)
-        return query.resultList
-    }
+    @PersistenceContext(name = "primary")
+    private lateinit var em: EntityManager
 
-    fun findByStock() : List<Product> {
-        val byStock : PredicateBuilder<Product> = {
-            criteriaBuilder, root ->  criteriaBuilder.gt(root.get(Product_.stock), 10)
-        }
+    fun getProducts(): List<Product> = JPAQuery(em).from(product).list(product)
 
-        return findWhere(byStock)
-    }
-
-    fun updateStock() {
-        val byStock : PredicateBuilder<Product> = {
-            criteriaBuilder, root ->  criteriaBuilder.gt(root.get(Product_.stock), 10)
-        }
-
-
+    fun findByStock(stock: Int = 10): List<Product> {
+        return JPAQuery(em)
+                .from(product)
+                .where(product.stock.gt(stock))
+                .list(product)
     }
 }

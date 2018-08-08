@@ -10,5 +10,7 @@ class ProductService {
     @Inject
     private lateinit var productDao: ProductDao
 
-    fun getProducts() = productDao.findByStock()
+    fun getProducts() = productDao.getProducts()
+
+    fun getProductsByStock(stock: Int = 10) = productDao.findByStock()
 }
