@@ -19,4 +19,12 @@ class ProductDao : AbstractDao<Product>(Product::class.java) {
 
         return findWhere(byStock)
     }
+
+    fun updateStock() {
+        val byStock : PredicateBuilder<Product> = {
+            criteriaBuilder, root ->  criteriaBuilder.gt(root.get(Product_.stock), 10)
+        }
+
+
+    }
 }
